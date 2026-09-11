@@ -21,6 +21,12 @@ botonAgregar.addEventListener("click", function () {
     // Añadimos el texto de la tarea
     nuevaTarea.textContent = texto;
 
+    // Cuando hacemos clic en una tarea,
+    // la marcamos como completada
+    nuevaTarea.addEventListener("click", function () {
+        nuevaTarea.classList.toggle("completada");
+});
+
     // Añadimos la tarea a la lista
     listaTareas.appendChild(nuevaTarea);
 
